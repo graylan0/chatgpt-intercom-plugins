@@ -1,3 +1,5 @@
+```
+
 DAO Democracy
 {
     "schema_version": "v1",
@@ -1030,3 +1032,4 @@ inputs = tokenizer.encode(in_string, return_tensors='pt', truncation=True, max_l
 attention_mask = inputs.ne(tokenizer.pad_token_id).float()
 outputs = model.generate(inputs, max_length=max_length, do_sample=True, max_time=time_limit, attention_mask=attention_mask)
 Now, the GPT-Neo model will run on the CPU. Please note that running on the CPU may be significantly slower than running on a GPU, especially for larger models like GPT-Neo 1.3B.
+```
